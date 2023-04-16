@@ -1,0 +1,30 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Used vehicle price prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Name :  <input type="text", name='a', placeholder="Name"> <br><br>
+            Location :  <input type="text", name='b', placeholder="Location"> <br><br>
+            Year :  <input type="number", name='c', placeholder="Year"> <br><br>
+            Kilometers Driven : <input type="number", name='d', placeholder="enter 4"> <br><br>
+            Fuel Type :  <input type="text", name='e', placeholder="Fuel Type"> <br><br>
+            Transmission :  <input type="text", name='f', placeholder="Transmission"> <br><br>
+            Owner Type :  <input type="text", name='g', placeholder="Owner Type"> <br><br>
+            Mileage :  <input type="text", name='h', placeholder="Mileage"> <br><br>
+            <!-- Engine :  <input type="number", name='Engine', placeholder="Engine"> <br><br> -->
+            Power :  <input type="text", name='i', placeholder="Power"> <br><br>
+            Seats :  <input type="text", name='j', placeholder="no of Seats"> <br><br>
+            <!-- New Price :  <input type="number", name='New Price', placeholder="Price of the same new model now"> <br><br><br> -->
+        </b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        
+    </center>
+
+    </body>
+</html>
