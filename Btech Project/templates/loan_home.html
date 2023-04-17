@@ -1,0 +1,30 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Loan Defaulter </h1><br>
+        
+        <form method="POST", action="{{url_for('loan')}}">
+           <b> loan_amount :  <input type="number", name='a', placeholder="loan_amount"> <br><br>
+            asset_cost :  <input type="number", name='b', placeholder="asset_cost"> <br><br>
+            loan_to_asset_value_ratio :  <input type="text", name='c', placeholder="loan_to_asset_value_ratio"> <br><br>
+            asset_manufacturer_id : <input type="number", name='d', placeholder="asset_manufacturer_id"> <br><br>
+            credit_score :  <input type="number", name='e', placeholder="credit_score"> <br><br>
+            new_loan_accounts_in_last_6_months :  <input type="number", name='f', placeholder="new_loan_accounts_in_last_6_months"> <br><br>
+            overdue_accounts_in_last_6_months :  <input type="number", name='g', placeholder="overdue_accounts_in_last_6_months"> <br><br>
+            avg_account_age :  <input type="text", name='h', placeholder="avg_account_age"> <br><br>
+            active_loan_accounts :  <input type="number", name='i', placeholder="active_loan_accounts"> <br><br>
+            existing_loan_balance :  <input type="number", name='j', placeholder="existing_loan_balance"> <br><br>
+            total_disbursed_amount :  <input type="number", name='k', placeholder="total_disbursed_amount"> <br><br>
+            current_installment :  <input type="number", name='l', placeholder="current_installment"> <br><br><br>
+        </b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        
+    </center>
+
+    </body>
+</html>
