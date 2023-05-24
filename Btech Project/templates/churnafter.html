@@ -6,11 +6,11 @@
 
         <h1>  PREDICTION :  </h1>
         <h1>{{data}}</h1> 
-   {%if data == True%}
-    <h1>customer will be defaulter so bank will not provide loan</h1> 
+    {%if data == 0%}
+    <h1>customer will churn</h1> 
 
     {%else%}
-    <h1>congrats ! you will get a loan</h1>
+    <h1>customer will not churn</h1>
     
     {%endif%}
 

@@ -1,0 +1,46 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Churn Prediction </h1><br>
+        
+        <form method="POST", action="{{url_for('churn')}}">
+           <b> CreditScore :  <input type="number", name='a', placeholder="CreditScore"> <br><br>
+            Gender :  <input list="gender", name='b', placeholder="Gender">
+            <datalist id="gender">
+                <option value="Male">
+                <option value="Female">
+              </datalist>
+            <br><br>
+            Age :  <input type="number", name='c', placeholder="Age"> <br><br>
+            Tenure :  <input type="number", name='d', placeholder="Tenure"> <br><br>
+            Balance : <input type="text", name='e', placeholder="Balance"> <br><br>
+            NumOfProducts :  <input type="number", name='f', placeholder="NumOfProducts"> <br><br>
+            HasCrCard :  <input list="HasCrCard" name='g', placeholder="HasCrCard">
+            <datalist id="HasCrCard">
+                <option value=0>
+                <option value=1>
+              </datalist>
+            <br><br>
+            IsActiveMember :  <input list="activemem" name='h', placeholder="IsActiveMember">
+            <datalist id="activemem">
+                <option value=0>
+                <option value=1>
+              </datalist>
+            <br><br>
+            EstimatedSalary :  <input type="text", name='i', placeholder="EstimatedSalary"> <br><br><br>
+            <!-- active_loan_accounts :  <input type="number", name='i', placeholder="active_loan_accounts"> <br><br>
+            existing_loan_balance :  <input type="number", name='j', placeholder="existing_loan_balance"> <br><br>
+            total_disbursed_amount :  <input type="number", name='k', placeholder="total_disbursed_amount"> <br><br>
+            current_installment :  <input type="number", name='l', placeholder="current_installment"> <br><br><br> -->
+        </b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        
+    </center>
+
+    </body>
+</html>
