@@ -92,14 +92,14 @@ df_test['Power']=df_test['Power'].str.replace('null','74')
 df_test['Power']=df_test['Power'].str.replace('nan','74')
 df_test['Power']=df_test['Power'].astype(float)
 
-from scipy import stats
-#applying log transformation
-df_train['Price'] = np.log(df_train['Price'])
-#transformed histogram and normal probability plot
-#sns.distplot(data['Price']);
-sns.distplot(df_train['Price'], fit=None);
-fig = plt.figure()
-res = stats.probplot(df_train['Price'], plot=plt)
+# from scipy import stats
+# #applying log transformation
+# df_train['Price'] = np.log(df_train['Price'])
+# #transformed histogram and normal probability plot
+# #sns.distplot(data['Price']);
+# sns.distplot(df_train['Price'], fit=None);
+# fig = plt.figure()
+# res = stats.probplot(df_train['Price'], plot=plt)
 
 df_train.drop(['Cars'],axis=1,inplace=True)
 
@@ -139,7 +139,7 @@ pred_scratch = pipe.predict(X_test)
 from sklearn.metrics import mean_squared_error
 print("MSE",mean_squared_error(y_test, pred_scratch))
 
-yhat = pipe.predict(pd.DataFrame([['Maruti Alto','Delhi',2014,40929,'CNG','Manual','First',32.26,58.2,4.0]], columns=['Name','Location','Year','Kilometers_Driven','Fuel_Type','Transmission','Owner_Type','Mileage','Power','Seats']))
+yhat = pipe.predict(pd.DataFrame([['Hyundai Creta','Pune',2015,41000,'Diesel','Manual','First',19.67,126.20,5.0]], columns=['Name','Location','Year','Kilometers_Driven','Fuel_Type','Transmission','Owner_Type','Mileage','Power','Seats']))
 
 print(yhat)
 
